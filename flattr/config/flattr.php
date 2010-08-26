@@ -14,7 +14,9 @@
 		 */
 	
 		/*
-		 * 
+		 * Flattr Buttons are shown below nodes of the following types
+		 * with the according flattr category
+		 * $node_types[<node_type>][<flattr_category>]
 		 */
 		'node_types' => array(
 			'blog' => 'text'
