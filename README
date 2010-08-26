@@ -1,0 +1,5 @@
+Install:
+- Put the flattr folder in your app/plugins directory or upload this plugin as a zip in your admin menu
+- Enter your Flattr uid in config/flattr.php
+- optionally change the other settings
+- activate the helper hook in your admin menu
