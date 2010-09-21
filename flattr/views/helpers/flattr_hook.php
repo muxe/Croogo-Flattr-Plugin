@@ -42,7 +42,8 @@ class FlattrHookHelper extends AppHelper {
 		Configure::load('flattr.flattr');
 		$node_types = Configure::read('Flattr.node_types');
 		if(array_key_exists($this->Layout->node('type'), $node_types)) {
-			return $this->Flattr->button(array(
+			$ret = '<div class="flattr">';
+			$ret .= $this->Flattr->button(array(
         		'title' => $this->Layout->node('title'),
         		'desc' => $this->Layout->node('excerpt'),
         		'uid' => Configure::read('Flattr.uid'),
@@ -51,6 +52,8 @@ class FlattrHookHelper extends AppHelper {
         		'hidden' => Configure::read('Flattr.hidden'),
         		'url' => Router::url($this->Layout->node('path'), true)
 			));
+			$ret .= '</div>';
+			return $ret;
 		}
 	}
 }
