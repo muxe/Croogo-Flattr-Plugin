@@ -1,10 +1,12 @@
-For Croogo 1.3.1
+For Croogo 1.3.2
 
 Install:
 - Put the flattr folder in your app/plugins directory or upload this plugin as a zip in your admin menu
-- Enter your Flattr uid in config/flattr.php
-- optionally change the other settings
-- activate the helper hook in your admin menu
+- activate the plugin in admin menu Extensions->Plugins
+- change the settings in Extensions->Flattr Settings
+
+Styling:
+- The Flattr Button is in a div with the class 'flattr', so style it via css
 
 The Flattr Helper (flattr/views/helpers/flattr.php):
 I first coded the FlattrHelper as standalone helper. It still can be used as such and therefore has a lot of comments in it.
